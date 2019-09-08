@@ -1,0 +1,102 @@
+<div class="limiter">
+  <div class="container-login100">
+    <div class="wrap-login100 p-t-85 p-b-20">
+      
+      <div class="wrap-input100 validate-input m-t-85 m-b-35" >
+          <input class="input100"  placeholder="Add a New Contact"
+          disabled>
+        </div>
+
+
+      <form class="login100-form validate-form" (ngSubmit)="onSubmit()" >
+
+          <span class="login100-form-avatar" id="img">
+              <img src="assets/imgonline-com-ua-shape-Z1QlsCIOQF.png" alt="AVATAR">
+               
+            </span>
+
+
+
+
+
+            <!-- <span class="login100-form-avatar" id="img">
+
+
+              <input  id="prdImageFile" name="prdImageFile" #file type="file"
+                accept='image/*' (change)="handleFileInput(file.files)" />
+               <img src="assets/imgonline-com-ua-shape-Z1QlsCIOQF.png" height="60" *ngIf="imgURL" width="60"  >  
+             
+            </span> -->
+
+
+        <span class="login100-form-title p-b-70">
+            <!-- <input  id="contactsImageFile" name="contactsImageFile" #file type="file"
+            accept='image/*' (change)="handleFileInput(file.files)"  style="font-size:10px" />
+             -->
+            <label>
+                <i class="fa fa-image"></i> Add Photo<input  id="contactsImageFile"  
+                #file type="file"  accept='image/*' 
+                (change)="handleFileInput(file.files)" style="display: none;" 
+                name="contactsImageFile">
+                </label>
+            <!-- <img src="assets/imgonline-com-ua-shape-Z1QlsCIOQF.png" height="60" *ngIf="imgURL" width="60"  > -->
+
+
+
+        </span>
+        
+
+        <div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Enter Firstname ">
+          <input class="input100" 
+          type="text" 
+          name="First name" 
+          placeholder="First name"
+          [(ngModel)]="NewContact.firstName"
+          #Firstname="ngModel"
+          >
+        </div>
+
+          <div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Enter Last name">
+              <input class="input100"
+               type="text"
+                name="Lastname"
+                 placeholder="Last name"
+                 [(ngModel)]="NewContact.lastName"
+                 #Lasttname="ngModel">
+            </div>
+
+            <div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Enter Phone">
+                <input class="input100"
+                 type="number"
+                  name="Phone"
+                   placeholder="Phone"
+                   [(ngModel)]="NewContact.mobileNumber"
+                   #Phone="ngModel">
+              </div>
+
+              
+            <div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Enter Email">
+                <input class="input100"
+                 type="email"
+                  name="email"
+                   placeholder="Email address"
+                   [(ngModel)]="NewContact.email"
+                   #email="ngModel">
+              </div>
+  
+  
+
+        <div class="container-login100-form-btn">
+          <button class="btn" >
+            Add Contact
+          </button>
+        </div>
+      </form>
+      <div class="container-login100-form-btn">
+          <button class="btn2">
+            <a  routerLink="/Default" routerLinkActive="active-link">Cancel</a>
+          </button>
+        </div>
+    </div>
+  </div>
+</div>

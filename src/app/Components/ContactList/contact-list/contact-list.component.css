@@ -1,0 +1,122 @@
+/* Styles for wrapping the search box */
+
+.main {
+    width: 90%; 
+    margin: 5% auto;
+  
+}
+::placeholder
+{padding-left: 45%;}
+
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+padding-left: 23%;
+
+   
+   
+    
+
+}
+
+
+.form-control
+{
+border: 1px solid #aaa;
+border-radius: 14px;
+margin-top:1px;
+height:50 px;
+
+}
+/************************/
+.container
+{ width: 60%; 
+    
+}
+.btn
+{width: 100%;
+padding-right: 80%;
+font-size: 13px;
+margin-top: -18px;
+margin-top: 4px;
+background-color: rgb(247, 245, 245);
+
+}
+#search
+{
+    background-color: rgb(223, 219, 219);
+    height:20 px;
+    border: 1px solid rgb(238, 234, 234);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-left: 5px;
+    border-right: 5px;
+
+   
+
+}
+#searchOnly
+{    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+#search-add
+{background-color: white;
+}
+#icon
+{
+    /* padding-left: 10%;  */
+}
+.pull-left
+{
+    padding-left: 10px;
+    font-size: 16px;
+}
+p
+{
+    font-size: 13px;
+}
+#img
+{
+    width: 50%;
+    height: 50%;
+    background-image: url("https://www.vectorstock.com/royalty-free-vector/default-avatar-profile-icon-vector-18942381");
+    text-align: center;}
+
+
+#vl {
+  border-left: 1px solid rgb(248, 255, 248);
+  height: 500px;
+}
+.recentContacts
+{
+    padding-left:3%;
+    font-size: 14px;
+    font-weight: bold;
+    border-top: 1px solid rgb(182, 179, 179);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: rgb(51, 50, 50);
+    background-color: rgb(247, 245, 245);
+}
+#Contacts
+{
+    border-bottom: 1px solid rgb(182, 179, 179);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: rgb(51, 50, 50);
+    margin: 5% auto;  
+}

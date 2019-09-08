@@ -1,0 +1,60 @@
+<div class="container">
+<div class="main">
+  
+  <!-- Actual search box -->
+  <div id="search-add">
+  <div id="search">
+
+  <div class="form-group has-search" id="searchOnly" >
+    <span class="fa fa-search form-control-feedback"></span>
+    <input type="text" class="form-control" placeholder="Search Contacts" [(ngModel)]="SearchContacts" >
+  </div>
+  </div>
+  <a  class="btn" routerLink="/Add" routerLinkActive="active-link" >Add New Contacts<i class="fa fa-plus" id="icon" aria-hidden="true"  ></i></a>
+  <div class="recentContacts"> Latest Contacts</div>
+</div>
+
+<div class="row" id="Contacts" style="padding: 20px;" *ngFor="let item of RecentList|contactsFilter:SearchContacts">
+  <div class="col-md-12">
+
+    <div class="pull-left"><img class="img-circle" [src]='item.image'    /></div>
+    <div class="pull-left">
+     {{item.firstName}} {{item.lastName}}<br><p> {{item.email}}</p>
+    </div>
+    
+ </div>
+</div>
+
+
+<div class="row" id="Contacts" style="padding: 20px;" *ngFor="let Shareitem of ShareServicesList|contactsFilter:SearchContacts">
+    <div class="col-md-12">
+  
+      <div class="pull-left"><img class="img-circle" [src]='Shareitem.image'   /></div>
+      <div class="pull-left">
+       {{Shareitem.firstName}} {{Shareitem.lastName}}<br><p> {{Shareitem.email}}</p>
+      </div>
+      
+   </div>
+  </div>
+
+  <div class="row">
+
+      <div class="col-lg-11">
+  
+        <div class="row" id="Contacts" style="padding: 20px;" *ngFor="let Contactsitem of ContactsList|contactsFilter:SearchContacts ">
+      <div class="col-lg-12">
+    
+        <div class="pull-left"><img class="img-circle" [src]='Contactsitem.image'    /></div>
+        <div class="pull-left">
+         {{Contactsitem.firstName}} {{Contactsitem.lastName}}<br><p> {{Contactsitem.email}}</p>
+        </div>
+        
+     </div>
+     </div>
+      </div>
+
+     <div class="col-lg-1" id="v1" >A<br>B<br>C<br>D<br>E<br>F<br>G<br>H<br>I<br>J<br>K<br>L<br>M<br>N<br>O
+      <br>P<br>Q<br>R<br>S<br>T<br>U<br>V<br>W<br>X<br>Y<br>Z<br></div>
+    </div>
+</div>
+</div>
